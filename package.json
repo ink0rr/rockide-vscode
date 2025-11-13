@@ -12,7 +12,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ink0rr/rockide-vscode"
+		"url": "https://github.com/rockide/rockide-vscode"
 	},
 	"main": "./dist/extension.cjs",
 	"type": "module",
@@ -26,7 +26,7 @@
 		"check-types": "tsc --noEmit",
 		"fmt": "dprint fmt",
 		"lint": "eslint src",
-		"clone-schemas": "degit github:ink0rr/editor-packages/packages/minecraftBedrock/schema#rockide schemas"
+		"clone-schemas": "degit github:rockide/editor-packages/packages/minecraftBedrock/schema#rockide schemas"
 	},
 	"dependencies": {
 		"modern-tar": "^0.6.1",
