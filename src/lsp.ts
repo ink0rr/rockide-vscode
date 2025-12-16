@@ -16,6 +16,7 @@ export async function startClient(exe: vscode.Uri) {
 		documentSelector: [
 			{ scheme: "file", language: "json" },
 			{ scheme: "file", language: "jsonc" },
+			{ scheme: "file", language: "rockide-lang" },
 		],
 		uriConverters: {
 			code2Protocol: (uri) => uri.toString(true),

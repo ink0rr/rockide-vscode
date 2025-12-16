@@ -64,6 +64,252 @@
 				"title": "Rockide: Check for Updates"
 			}
 		],
+		"semanticTokenTypes": [
+			{
+				"id": "colorDefault",
+				"superType": "type",
+				"description": "Default color"
+			},
+			{
+				"id": "colorGreen",
+				"superType": "type",
+				"description": "Green color (a)"
+			},
+			{
+				"id": "colorAqua",
+				"superType": "type",
+				"description": "Aqua color (b)"
+			},
+			{
+				"id": "colorRed",
+				"superType": "type",
+				"description": "Red color (c)"
+			},
+			{
+				"id": "colorLightPurple",
+				"superType": "type",
+				"description": "Light Purple color (d)"
+			},
+			{
+				"id": "colorYellow",
+				"superType": "type",
+				"description": "Yellow color (e)"
+			},
+			{
+				"id": "colorWhite",
+				"superType": "type",
+				"description": "White color (f)"
+			},
+			{
+				"id": "colorMinecoinGold",
+				"superType": "type",
+				"description": "Minecoin Gold color (g)"
+			},
+			{
+				"id": "colorMaterialQuartz",
+				"superType": "type",
+				"description": "Quartz Material color (h)"
+			},
+			{
+				"id": "colorMaterialIron",
+				"superType": "type",
+				"description": "Iron Material color (i)"
+			},
+			{
+				"id": "colorMaterialNetherite",
+				"superType": "type",
+				"description": "Netherite Material color (j)"
+			},
+			{
+				"id": "colorMaterialRedstone",
+				"superType": "type",
+				"description": "Redstone Material color (m)"
+			},
+			{
+				"id": "colorMaterialCopper",
+				"superType": "type",
+				"description": "Copper Material color (n)"
+			},
+			{
+				"id": "colorMaterialGold",
+				"superType": "type",
+				"description": "Gold Material color (p)"
+			},
+			{
+				"id": "colorMaterialEmerald",
+				"superType": "type",
+				"description": "Emerald Material color (q)"
+			},
+			{
+				"id": "colorMaterialDiamond",
+				"superType": "type",
+				"description": "Diamond Material color (s)"
+			},
+			{
+				"id": "colorMaterialLapisLazuli",
+				"superType": "type",
+				"description": "Lapis Lazuli Material color (t)"
+			},
+			{
+				"id": "colorMaterialAmethyst",
+				"superType": "type",
+				"description": "Amethyst Material color (y)"
+			},
+			{
+				"id": "colorMaterialResin",
+				"superType": "type",
+				"description": "Resin Material color (v)"
+			},
+			{
+				"id": "colorBlack",
+				"superType": "type",
+				"description": "Black color (0)"
+			},
+			{
+				"id": "colorDarkBlue",
+				"superType": "type",
+				"description": "Dark Blue color (1)"
+			},
+			{
+				"id": "colorDarkGreen",
+				"superType": "type",
+				"description": "Dark Green color (2)"
+			},
+			{
+				"id": "colorDarkAqua",
+				"superType": "type",
+				"description": "Dark Aqua color (3)"
+			},
+			{
+				"id": "colorDarkRed",
+				"superType": "type",
+				"description": "Dark Red color (4)"
+			},
+			{
+				"id": "colorDarkPurple",
+				"superType": "type",
+				"description": "Dark Purple color (5)"
+			},
+			{
+				"id": "colorGold",
+				"superType": "type",
+				"description": "Gold color (6)"
+			},
+			{
+				"id": "colorGray",
+				"superType": "type",
+				"description": "Gray color (7)"
+			},
+			{
+				"id": "colorDarkGray",
+				"superType": "type",
+				"description": "Dark Gray color (8)"
+			},
+			{
+				"id": "colorBlue",
+				"superType": "type",
+				"description": "Blue color (9)"
+			}
+		],
+		"configurationDefaults": {
+			"editor.semanticTokenColorCustomizations": {
+				"rules": {
+					"colorGreen": {
+						"foreground": "#54FF54"
+					},
+					"colorAqua": {
+						"foreground": "#54FFFF"
+					},
+					"colorRed": {
+						"foreground": "#FF5454"
+					},
+					"colorLightPurple": {
+						"foreground": "#FF54FF"
+					},
+					"colorYellow": {
+						"foreground": "#FFFF54"
+					},
+					"colorWhite": {
+						"foreground": "#FFFFFF"
+					},
+					"colorMinecoinGold": {
+						"foreground": "#EFCE16"
+					},
+					"colorMaterialQuartz": {
+						"foreground": "#E2D3D1"
+					},
+					"colorMaterialIron": {
+						"foreground": "#CEC9C9"
+					},
+					"colorMaterialNetherite": {
+						"foreground": "#44393A"
+					},
+					"colorMaterialRedstone": {
+						"foreground": "#961506"
+					},
+					"colorMaterialCopper": {
+						"foreground": "#B4684D"
+					},
+					"colorMaterialEmerald": {
+						"foreground": "#47A036"
+					},
+					"colorMaterialGold": {
+						"foreground": "#DEB12D"
+					},
+					"colorMaterialDiamond": {
+						"foreground": "#2CB9A8"
+					},
+					"colorMaterialLapisLazuli": {
+						"foreground": "#20487A"
+					},
+					"colorMaterialAmethyst": {
+						"foreground": "#9A5CC5"
+					},
+					"colorMaterialResin": {
+						"foreground": "#EA7113"
+					},
+					"colorBlack": {
+						"foreground": "#000000"
+					},
+					"colorDarkBlue": {
+						"foreground": "#0000AA"
+					},
+					"colorDarkGreen": {
+						"foreground": "#00AA00"
+					},
+					"colorDarkAqua": {
+						"foreground": "#00AAAA"
+					},
+					"colorDarkRed": {
+						"foreground": "#AA0000"
+					},
+					"colorDarkPurple": {
+						"foreground": "#AA00AA"
+					},
+					"colorGold": {
+						"foreground": "#FFAA00"
+					},
+					"colorGray": {
+						"foreground": "#C5C5C5"
+					},
+					"colorDarkGray": {
+						"foreground": "#545454"
+					},
+					"colorBlue": {
+						"foreground": "#5555FF"
+					},
+					"*.obfuscated": {
+						"strikethrough": true
+					},
+					"*.bold": {
+						"bold": true
+					},
+					"*.italic": {
+						"italic": true
+					}
+				}
+			}
+		},
 		"configuration": {
 			"title": "Rockide Configuration",
 			"properties": {
@@ -98,11 +344,6 @@
 			}
 		},
 		"grammars": [
-			{
-				"language": "rockide-lang",
-				"scopeName": "source.rockide.lang",
-				"path": "./syntaxes/lang.tmLanguage.json"
-			},
 			{
 				"language": "rockide-molang",
 				"scopeName": "source.rockide.molang",
