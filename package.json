@@ -67,7 +67,7 @@
 		"semanticTokenTypes": [
 			{
 				"id": "colorDefault",
-				"superType": "type",
+				"superType": "_none",
 				"description": "Default color"
 			},
 			{
