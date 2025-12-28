@@ -22,7 +22,9 @@ export async function startClient(exe: vscode.Uri) {
 			code2Protocol: (uri) => uri.toString(true),
 			protocol2Code: (path) => vscode.Uri.parse(path),
 		},
-		initializationOptions: getProjectPaths(),
+		initializationOptions: {
+			projectPaths: getProjectPaths(),
+		},
 	};
 	const client = new LanguageClient("rockide", "Rockide", serverOptions, clientOptions);
 	current = client;
