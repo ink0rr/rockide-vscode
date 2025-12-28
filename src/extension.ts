@@ -1,6 +1,5 @@
 import * as vscode from "vscode";
 import { startClient, stopClient } from "./lsp";
-import { isMinecraftWorkspace } from "./project";
 import {
 	getDefaultRockidePath,
 	getInstalledRockideExe,
@@ -59,10 +58,8 @@ export async function activate(ctx: vscode.ExtensionContext) {
 		}),
 	);
 
-	if (await isMinecraftWorkspace()) {
-		await startClient(rockideExe);
-		await updateRockide(ctx, true);
-	}
+	await startClient(rockideExe);
+	await updateRockide(ctx, true);
 }
 
 export async function deactivate() {

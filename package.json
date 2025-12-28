@@ -31,7 +31,6 @@
 	"dependencies": {
 		"modern-tar": "^0.6.1",
 		"semver": "^7.7.3",
-		"strip-json-comments": "^5.0.3",
 		"vscode-languageclient": "^9.0.1",
 		"which": "^5.0.0"
 	},
@@ -329,11 +328,7 @@
 								"resourcePack": {
 									"type": "string"
 								}
-							},
-							"required": [
-								"behaviorPack",
-								"resourcePack"
-							]
+							}
 						},
 						{
 							"type": "null"

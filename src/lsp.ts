@@ -1,6 +1,5 @@
 import * as vscode from "vscode";
 import { LanguageClient, LanguageClientOptions, ServerOptions } from "vscode-languageclient/node";
-import { getProjectPaths } from "./project";
 
 let current: LanguageClient | null;
 
@@ -11,6 +10,7 @@ export async function startClient(exe: vscode.Uri) {
 		throw new Error("Another client is already running!");
 	}
 
+	const config = vscode.workspace.getConfiguration("rockide");
 	const serverOptions: ServerOptions = {
 		command: exe.fsPath,
 	};
@@ -25,7 +25,7 @@ export async function startClient(exe: vscode.Uri) {
 			protocol2Code: (path) => vscode.Uri.parse(path),
 		},
 		initializationOptions: {
-			projectPaths: getProjectPaths(),
+			projectPaths: config.get("projectPaths"),
 		},
 		outputChannel,
 	};
