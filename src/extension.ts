@@ -19,6 +19,17 @@ export async function activate(ctx: vscode.ExtensionContext) {
 				}
 			}
 		}),
+		vscode.workspace.onDidChangeConfiguration(async (event) => {
+			if (event.affectsConfiguration("rockide.path")) {
+				const res = await vscode.window.showInformationMessage(
+					"Rockide path changed. Restart VSCode to apply your changes.",
+					"Restart",
+				);
+				if (res === "Restart") {
+					await vscode.commands.executeCommand("workbench.action.reloadWindow");
+				}
+			}
+		}),
 	);
 
 	let rockideExe = await getInstalledRockideExe(ctx);
@@ -33,6 +44,20 @@ export async function activate(ctx: vscode.ExtensionContext) {
 			return;
 		}
 	}
+
+	ctx.subscriptions.push(
+		vscode.workspace.onDidChangeConfiguration(async (event) => {
+			if (event.affectsConfiguration("rockide.projectPaths")) {
+				vscode.window.withProgress({
+					location: vscode.ProgressLocation.Notification,
+					title: "Project configuration changed. Restarting language server...",
+				}, async () => {
+					await stopClient();
+					await startClient(rockideExe);
+				});
+			}
+		}),
+	);
 
 	if (await isMinecraftWorkspace()) {
 		await startClient(rockideExe);
