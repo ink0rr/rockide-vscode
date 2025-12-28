@@ -4,6 +4,8 @@ import { getProjectPaths } from "./project";
 
 let current: LanguageClient | null;
 
+const outputChannel = vscode.window.createOutputChannel("Rockide");
+
 export async function startClient(exe: vscode.Uri) {
 	if (current) {
 		throw new Error("Another client is already running!");
@@ -25,10 +27,12 @@ export async function startClient(exe: vscode.Uri) {
 		initializationOptions: {
 			projectPaths: getProjectPaths(),
 		},
+		outputChannel,
 	};
 	const client = new LanguageClient("rockide", "Rockide", serverOptions, clientOptions);
 	current = client;
 
+	outputChannel.clear();
 	await client.start();
 }
 
