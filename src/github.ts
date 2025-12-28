@@ -1,7 +1,7 @@
 import { createHash } from "crypto";
 import * as vscode from "vscode";
 
-const GITHUB_API_URL = "https://api.github.com/repos/ink0rr/rockide/releases";
+const GITHUB_API_URL = "https://api.github.com/repos/rockide/language-server/releases";
 
 export type GitHubRelease = {
 	tag_name: string;
