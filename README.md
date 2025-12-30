@@ -1,12 +1,27 @@
 # Rockide for Visual Studio Code
 
-This extension adds support for using [Rockide](https://github.com/ink0rr/rockide) with Visual Studio Code.
+VSCode extension for Minecraft Bedrock that provides rich auto-completions, go-to definitions, and schema validation.
 
-## Installation
+## Features
 
-### From source
+Supported language features for JSON files:
 
-- Install [Rockide](https://github.com/ink0rr/rockide) and add it to your PATH
-- Run `npm run clone-schemas` to download the schema files
-- Install `@vscode/vsce` globally if you haven't: `npm i -g @vscode/vsce`
-- Build the extension: `vsce package`
+- Completions
+- Go to definitions
+- Symbol rename
+- Schema validation
+
+Supported language features for Molang:
+
+- Completions
+- Go to definitions
+- Hover
+- Signature help
+- Syntax highlighting
+
+## Planned Features
+
+These features are not yet implemented but are planned to be added:
+
+- Command completions & syntax highlighting
+- Project diagnostics
