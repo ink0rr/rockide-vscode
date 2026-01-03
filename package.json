@@ -343,6 +343,11 @@
 				"language": "rockide-molang",
 				"scopeName": "source.rockide.molang",
 				"path": "./syntaxes/molang.tmLanguage.json"
+			},
+			{
+				"language": "rockide-mcfunction",
+				"scopeName": "source.rockide.mcfunction",
+				"path": "./syntaxes/mcfunction.tmLanguage.json"
 			}
 		],
 		"languages": [
@@ -381,6 +386,16 @@
 					".molang"
 				],
 				"configuration": "./syntaxes/molang.language-configuration.json"
+			},
+			{
+				"id": "rockide-mcfunction",
+				"aliases": [
+					"Minecraft Function"
+				],
+				"extensions": [
+					".mcfunction"
+				],
+				"configuration": "./syntaxes/mcfunction.language-configuration.json"
 			}
 		],
 		"jsonValidation": [
