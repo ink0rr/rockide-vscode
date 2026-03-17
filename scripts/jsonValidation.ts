@@ -8,7 +8,7 @@
 import { readFile, writeFile } from "fs/promises";
 
 const BRIDGE_CORE_URL =
-	"https://raw.githubusercontent.com/bridge-core/editor-packages/refs/heads/main/dist/minecraftBedrock/fileDefinitions.json";
+	"https://raw.githubusercontent.com/rockide/editor-packages/refs/heads/rockide/dist/minecraftBedrock/fileDefinitions.json";
 
 const PACK_PREFIXES = {
 	behaviorPack: ["behavior_pack/", "*BP/", "BP_*/", "*bp/", "bp_*/"],
@@ -45,7 +45,7 @@ function getFileSuffix(extensions: string[]) {
 		return "{json,jsonc,json5}";
 	}
 	if (first === ".material") {
-		return first;
+		return "material";
 	}
 	return undefined;
 }
