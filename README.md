@@ -10,8 +10,17 @@ Supported language features for JSON files:
 - Go to definitions
 - Symbol rename
 - Schema validation
+- Embedded mcfunction & molang
 
 Supported language features for Molang:
+
+- Completions
+- Go to definitions
+- Hover
+- Signature help
+- Syntax highlighting
+
+Supported language features for mcfunction:
 
 - Completions
 - Go to definitions
@@ -23,5 +32,4 @@ Supported language features for Molang:
 
 These features are not yet implemented but are planned to be added:
 
-- Command completions & syntax highlighting
 - Project diagnostics
